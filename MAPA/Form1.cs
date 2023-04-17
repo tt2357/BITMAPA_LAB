@@ -14,6 +14,7 @@ namespace MAPA
     public partial class Form1 : Form
     {
         OpenFileDialog fd = new OpenFileDialog();
+        string filename;
         public Form1()
         {
             InitializeComponent();
@@ -79,6 +80,24 @@ namespace MAPA
                 }
             }
             pictureBox1.Image = negative;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image.RotateFlip(RotateFlipType.Rotate90FlipXY);
+            pictureBox1.Image = pictureBox1.Image;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image.RotateFlip(RotateFlipType.RotateNoneFlipX);
+            pictureBox1.Image = pictureBox1.Image;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image.RotateFlip(RotateFlipType.RotateNoneFlipY);
+            pictureBox1.Image = pictureBox1.Image;
         }
     }
 }
