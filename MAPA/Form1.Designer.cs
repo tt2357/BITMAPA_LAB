@@ -30,6 +30,8 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.negative = new System.Windows.Forms.Button();
+            this.green = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,11 +55,33 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // negative
+            // 
+            this.negative.Location = new System.Drawing.Point(508, 361);
+            this.negative.Name = "negative";
+            this.negative.Size = new System.Drawing.Size(176, 77);
+            this.negative.TabIndex = 2;
+            this.negative.Text = "NEGATIVE";
+            this.negative.UseVisualStyleBackColor = true;
+            this.negative.Click += new System.EventHandler(this.negative_Click);
+            // 
+            // green
+            // 
+            this.green.Location = new System.Drawing.Point(508, 12);
+            this.green.Name = "green";
+            this.green.Size = new System.Drawing.Size(176, 77);
+            this.green.TabIndex = 3;
+            this.green.Text = "ONLY GREEN";
+            this.green.UseVisualStyleBackColor = true;
+            this.green.Click += new System.EventHandler(this.green_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.green);
+            this.Controls.Add(this.negative);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
@@ -71,6 +95,8 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button negative;
+        private System.Windows.Forms.Button green;
     }
 }
 
